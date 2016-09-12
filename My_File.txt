@@ -1,2 +1,3 @@
 Hello world
 I'm using Git))
+And now I'm changing this file.
