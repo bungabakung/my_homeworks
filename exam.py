@@ -1,3 +1,4 @@
+## программа лежит в той же папке, где файлы со статьями
 import os
 import re
 import codecs
