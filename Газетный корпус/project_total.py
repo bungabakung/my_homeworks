@@ -1,4 +1,4 @@
-#на выходе получим каталог правильной структуры, в файлах будут храниться html-коды страниц со статьями
+#объем меньше 100 тысяч слов, потому что мне не удалось найти старые статьи
 
 import urllib.request 
 import re
@@ -119,7 +119,7 @@ for root, dirs, files in os.walk('C:\\Users\\lilia\\Documents\\Unechskaya_gazeta
         if not os.path.exists(xml_dir):
             os.makedirs(xml_dir)
         os.system(r'C:\\Users\\lilia\\Downloads\\mystem.exe' + r' -cid ' + root + os.sep + file + ' ' + xml_dir + os.sep + xml_file)
-
+      #размечаем майстемом в формате xml
 
 for root, dirs, files in os.walk('C:\\Users\\lilia\\Documents\\Unechskaya_gazeta\\plain'):
     for file in files:
@@ -128,6 +128,7 @@ for root, dirs, files in os.walk('C:\\Users\\lilia\\Documents\\Unechskaya_gazeta
             os.makedirs(mystem_dir)
         with open(mystem_dir + os.sep + file, 'w', encoding = 'utf-8') as f3:
             os.system(r'C:\\Users\\lilia\\Downloads\\mystem.exe' + r' -cid ' + root + os.sep + file + ' ' + mystem_dir + os.sep + file)
+       #размечаем майстемом в формате txt
 
 
 for i in range(len(mega_arr)):
@@ -140,5 +141,5 @@ for i in range(len(mega_arr)):
         file.write('@da ' + mega_arr[i][2] + '\n')
         file.write('@topic ' + mega_arr[i][3] + '\n')
         file.write('@url ' + mega_arr[i][4] + '\n')
-        file.write(text)
+        file.write(text) #добавляем к неразмеченным файлам метаданные
 
