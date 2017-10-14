@@ -4,6 +4,15 @@
        <title>Поиск в Яндексе</title>
     </head>
  <body>
+ <form action="https://www.google.ru/search?" method="get">
+    <p><b>Введите Ваш запрос для поиска в Гугле<b></p>
+    <input type="text" name="q"<Br>
+	<input type="hidden" name="newwindow" value="1"<Br>
+	<input type="hidden" name="dcr" value="0"<Br>
+	<input type="hidden" name="source" value="hp"<Br>
+    <p><input type="submit"></p>
+ </form> 
+ 
 
  <form action="https://yandex.ru/search/" method="get">
     <p><b>Введите Ваш запрос в Яндексе<b></p>
@@ -17,7 +26,7 @@
     <p><input type="submit"></p>
  </form>
  
- <form action="http://search1.ruscorpora.ru/search.xml?env=alpha&mycorp=&mysent=&mysize=&mysentsize=&mydocsize=&dpp=&spp=&spd=&text=lexform&mode=main&sort=gr_tagging&lang=ru&nodia=1&" method="get">
+ <form action="http://search1.ruscorpora.ru/search.xml?" method="get">
     <p><b>Введите Ваш запрос для поиска в НКРЯ<b></p>
     <input type="text" name="req"<Br>
 	<input type="hidden" name="env" value="alpha"<Br>
@@ -31,3 +40,4 @@
  
  </body>
  </html>
+
