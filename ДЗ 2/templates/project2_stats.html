@@ -1,0 +1,20 @@
+<html>
+ <body>
+ <table border="1" width="30%">
+ <h3>Статистика ответов в зависимости от пола</h3>
+  {% for x in range(len_g) %}
+  <tr>
+      <th>{{ arr_g[x][0] }}</th> <th>{{ arr_g[x][1] }}</th> <th>{{ arr_g[x][2] }}</th>
+</tr>
+  {% endfor %}
+ </table>
+  <table border="1" width="30%">
+ <h3>Статистика ответов в зависимости от возраста</h3>
+   {% for y in range(len_a) %}
+   <tr>
+      <th>{{ arr_a[y][0] }}</th> <th>{{ arr_a[y][1] }}</th> <th>{{ arr_a[y][2] }}</th>
+</tr>
+  {% endfor %}
+   </table>
+ </body>
+</html>

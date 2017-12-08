@@ -1,0 +1,12 @@
+<html>
+ <body>
+ <table border="1" width="30%">
+ <h3>Надеемся, это то, что Вы искали</h3>
+  {% for i in range(l) %}
+  <tr>
+      <th>{{ results_arr[i][0] }}</th> <th>{{ results_arr[i][1] }}</th> <th>{{ results_arr[i][2] }}</th>
+</tr>
+  {% endfor %}
+  </table>
+ </body>
+</html>
