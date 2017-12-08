@@ -1,0 +1,10 @@
+<html>
+<body>
+<h1>Список языков и их кодов</h1>
+<ul>
+    {% for lang, code in langs.items() %}
+        <li>{{ lang }}: {{ code }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
