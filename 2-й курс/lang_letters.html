@@ -1,0 +1,10 @@
+<html>
+<body>
+<h1>Языки, коды которых начинаются на "{{letters}}"</h1>
+<ul>
+    {% for lang, code in langs.items() %}
+        <li>{{ lang }}: {{ code }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
